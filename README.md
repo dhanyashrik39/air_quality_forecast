@@ -39,10 +39,10 @@ Januaries (Mann-Whitney p = 0.5836).
 
 ![AQI timeline](images/aqi_timeli<img width="1032" height="384" alt="aqi_timeline" src="https://github.com/user-attachments/assets/ce77e238-d588-4b50-bb0c-97d768b18b38" />
 ne.png)
-![Permutation Importanc]<img width="1210" height="495" alt="predicted" src="https://github.com/user-attachments/assets/d5075e9d-fdba-45a6-8afc-66188e662401" />
+![Permutation Importanc]
 <img width="721" height="447" alt="permutation" src="https://github.com/user-attachments/assets/ba981abf-b910-4e01-8110-3ba0314bec1a" />
 (images/permutation.png)
-![Actual vs predicted](images/<img width="721" height="447" alt="permutation" src="https://github.com/user-attachments/assets/81da5c4f-358b-44f1-911f-02d0ae05e230" />
+![Actual vs predicted](images/
 <img width="1210" height="495" alt="predicted" src="https://github.com/user-attachments/assets/2035ca4d-0145-48c4-a41b-316ffc014384" />
 predicted.png)
 
