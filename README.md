@@ -1,6 +1,6 @@
 # Los Angeles Air Quality: Analysis and Next-Day AQI Forecasting
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19JTzTwFyRODFTFjoy00Z4wCOGOh-3OWq?usp=sharing)
 
 ## Problem
 Air quality in Los Angeles is shaped by seasonal ozone, wildfire smoke, and weather.
@@ -18,7 +18,7 @@ Both sources are loaded directly in the notebook; no manual download is needed
 
 ## Approach
 1. **Data cleaning:** merged AQI and weather by date, checked for missing days
-   ([X] found), interpolated short gaps (up to 3 days), and kept real AQI spikes
+   (0 found), interpolated short gaps (up to 3 days), and kept real AQI spikes
    (wildfire days are events, not errors).
 2. **Feature engineering:** month, day of week, lagged AQI (1, 2, 7 days),
    7-day rolling mean, lagged wind, and the main pollutant of the day.
@@ -32,15 +32,18 @@ Both sources are loaded directly in the notebook; no manual download is needed
 ## Results
 | Model | MAE | RMSE | Correct AQI category |
 |---|---|---|---|
-| Baseline (yesterday's AQI) | [X] | [X] | [X]% |
-| Random Forest | [X] | [X] | [X]% |
-| XGBoost | [X] | [X] | [X]% |
+| Baseline (yesterday's AQI) | 17.6 | 24.3 | 65% |
+| Random Forest | 17.0 | 22.8 | 68% |
+| XGBoost | 17.1 | 23.6 | 69% |
 
-**Wildfire impact:** mean AQI after Jan 7, 2025 was [X] vs [X] in previous
-Januaries (Mann-Whitney p = [X]).
+**Wildfire impact:** mean AQI after Jan 7, 2025 was 85 vs 71 in previous
+Januaries (Mann-Whitney p = 0.5836).
 
-![AQI timeline](images/timeline.png)
-![Feature importance](images/feature_importance.png)
+![AQI timeline](images/aqi_timeli<img width="1032" height="384" alt="aqi_timeline" src="https://github.com/user-attachments/assets/ce77e238-d588-4b50-bb0c-97d768b18b38" />
+ne.png)
+![Permutation<img width="1210" height="495" alt="predicted" src="https://github.com/user-attachments/assets/d5075e9d-fdba-45a6-8afc-66188e662401" />
+<img width="721" height="447" alt="permutation" src="https://github.com/user-attachments/assets/ba981abf-b910-4e01-8110-3ba0314bec1a" />
+ importance](images/permutation.png)
 ![Actual vs predicted](images/actual_vs_predicted.png)
 
 ## Key findings
@@ -75,4 +78,4 @@ Januaries (Mann-Whitney p = [X]).
 seaborn, plotly, scikit-learn, xgboost, requests).
 
 ## Author
-[Your name] | [LinkedIn link] | [Email]
+Dhanyashri K 
